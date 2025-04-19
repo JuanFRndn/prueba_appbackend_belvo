@@ -78,8 +78,6 @@ async def list_transactions(
                 status_code=502,
                 detail="La respuesta del servicio bancario no tiene formato válido"
             )
-        
-        print(f"account_flows: {belvo_response["account_flows"]}")
 
         return {
             "data": belvo_response["data"],
